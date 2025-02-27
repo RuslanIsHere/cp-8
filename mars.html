@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mars</title>
+    <!-- Bootstrap CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <script src="mars.js" defer></script>
+</head>
+<body style="background-color: #1a1a1a;">
+    <div>
+        <header class="d-flex justify-content-center py-3 border-bottom" style="background-color:#0d1b2a;">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link text-light">APIs de la NASA</a>
+                </li>
+                <li class="nav-item">
+                    <a href="space.html" class="nav-link text-light">L'Espace</a>
+                </li>
+                <li class="nav-item">
+                    <a href="terre.html" class="nav-link text-light " ">La Terre</a>
+                </li>
+                <li class="nav-item">
+                    <a href="objets.html" class="nav-link text-light " >Objets Proches</a>
+                </li>
+                <li class="nav-item">
+                    <a href="mars.html" class="nav-link text-light active" aria-current="page">Mars</a>
+                </li>
+            </ul>
+        </header>
+    </div>
+    
+    <div class="container mt-5">
+        <div class="py-5 border rounded shadow-sm text-white">
+            <p class="lead px-4 mb-4 text-white"><strong>L'API Mars Rover Photos</strong> permet d'accéder aux images collectées par les rovers de la NASA sur Mars, notamment Curiosity, Opportunity, Spirit et Perseverance. Elle offre des fonctionnalités de recherche basées sur le sol martien (Sol) et la caméra utilisée, facilitant ainsi l'exploration des données martiennes</p>
+            <form class="w-50 mx-auto" id="dateForm">
+                <div class="mb-3 text-center">
+                    <label for="day" class="form-label fs-4 fw-bold">Choisissez un rover:</label>
+                    <select id="rover" class="form-select">
+                        <option value="curiosity">Curiosity</option>
+                        <option value="opportunity">Opportunity</option>
+                        <option value="spirit">Spirit</option>
+                    </select>
+                </div>
+                <div class="mb-3 text-center">
+                    <label for="day" class="form-label fs-4 fw-bold">Entrez une date martienne (sol):</label>
+                    <input type="number" id="sol" class="form-control" placeholder="Ex: 1000">
+                </div>
+                <div class="mb-3 text-center">
+                    <label for="day" class="form-label fs-4 fw-bold">Choisissez un type de caméra:</label>
+                    <select id="camera" class="form-select">
+                        <option value="FHAZ">Front Hazard Avoidance Camera</option>
+                        <option value="RHAZ">Rear Hazard Avoidance Camera</option>
+                        <option value="MAST">Mast Camera</option>
+                        <option value="CHEMCAM">Chemistry and Camera Complex</option>
+                        <option value="MAHLI">Mars Hand Lens Imager</option>
+                        <option value="MARDI">Mars Descent Imager</option>
+                        <option value="NAVCAM">Navigation Camera</option>
+                        <option value="PANCAM">Panoramic Camera</option>
+                        <option value="MINITES">Miniature Thermal Emission Spectrometer</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary w-100" id="button">Envoyer</button>
+            </form>
+        </div>
+        <h2 class="title text-center pt-4 text-white" id="title"></h2>
+        <div class="container py-4 row g-2" id="marsResult"></div>
+    </div>
+    <div>
+        <footer class="d-flex justify-content-between align-items-center py-3 px-3 mt-4 border-top" style="background-color: #0d1b2a;">
+            <p class="text-white mb-0">© 2025 APIs de la NASA</p>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="https://apod.nasa.gov/apod/astropix.html" class="nav-link text-white" target="_blank">APOD</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://epic.gsfc.nasa.gov" class="nav-link text-white" target="_blank">EPIC</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://cneos.jpl.nasa.gov/" class="nav-link text-white" target="_blank">ASTEROID NeoWs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://github.com/corincerami/mars-photo-api" class="nav-link text-white" target="_blank">MARS Rover Photos</a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+</body>
+</html>
