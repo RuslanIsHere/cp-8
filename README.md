@@ -23,6 +23,14 @@ Le projet comprend les pages suivantes :
 4. **Astéroïdes (objets.html)** — section avec des informations sur les astéroïdes proches de la Terre (NeoWs).
 5. **Mars (mars.html)** — section avec des photos des rovers martiens.
 
+
+Disponibilité sur Docker Hub
+
+Le conteneur Docker de ce projet est disponible sur Docker Hub. Pour le télécharger et l'exécuter, utilisez la commande suivante :
+
+docker run -d -p 8080:80 gabitovrv/nasa-test
+
+Cette commande télécharge l'image et lance le serveur web sur le port 8080. Vous pouvez ensuite accéder à l'application en ouvrant http://localhost:8080 dans votre navigateur.
 ## Comment démarrer le projet
 
 1. Clonez le repository :
