@@ -27,12 +27,12 @@ Le projet comprend les pages suivantes :
 ## Git Workflow
 Le projet a été initialisé sur Git avec les commandes suivantes :
 
-- ** Initialisation du dépôt Git:
+- **Initialisation du dépôt Git:
 
 git init
 Cela crée un nouveau dépôt Git dans le répertoire local.
 
-- ** Ajout des fichiers au suivi Git:
+- **Ajout des fichiers au suivi Git:
 
 git add .
 Cette commande ajoute tous les fichiers du répertoire au suivi Git.
@@ -42,7 +42,7 @@ Cette commande ajoute tous les fichiers du répertoire au suivi Git.
 git commit -m "Initial commit - Adding project files"
 Cela enregistre les modifications avec un message décrivant ce qui a été ajouté ou modifié.
 
-- ** Création d'un dépôt distant sur GitHub: Vous devez créer un dépôt sur GitHub, puis ajouter l'URL du dépôt distant avec la commande suivante :
+- **Création d'un dépôt distant sur GitHub: Vous devez créer un dépôt sur GitHub, puis ajouter l'URL du dépôt distant avec la commande suivante :
 
 git remote add origin https://github.com/yourusername/nasa-apis-project.git
 Push des modifications sur GitHub:
@@ -67,23 +67,23 @@ Construire l'image Docker :
 
 docker build -t votre-username/nasa-test .
 
-- ** Se connecter à Docker Hub :
+- **Se connecter à Docker Hub :
 
 docker login
 
-- ** Pousser l'image vers Docker Hub :
+- **Pousser l'image vers Docker Hub :
 
 docker push votre-username/nasa-test
 
-- ** Télécharger et exécuter l'image depuis Docker Hub : Comme mentionné plus tôt, vous pouvez utiliser la commande suivante pour exécuter l'image :
+- **Télécharger et exécuter l'image depuis Docker Hub : Comme mentionné plus tôt, vous pouvez utiliser la commande suivante pour exécuter l'image :
 
 docker run -d -p 8080:80 votre-username/nasa-test
 
-- ** Le conteneur Docker de ce projet est disponible sur Docker Hub. Pour le télécharger et l'exécuter, utilisez la commande suivante :
+- **Le conteneur Docker de ce projet est disponible sur Docker Hub. Pour le télécharger et l'exécuter, utilisez la commande suivante :
 
 docker run -d -p 8080:80 gabitovrv/nasa-test
 
-- ** Cette commande télécharge l'image et lance le serveur web sur le port 8080. Vous pouvez ensuite accéder à l'application en ouvrant http://localhost:8080 dans votre navigateur.
+- **Cette commande télécharge l'image et lance le serveur web sur le port 8080. Vous pouvez ensuite accéder à l'application en ouvrant http://localhost:8080 dans votre navigateur.
 
 ## Comment démarrer le projet
 
