@@ -79,8 +79,4 @@ docker run -d -p 8080:80 gabitovrv/nasa-test
 
 **Cette commande télécharge l'image et lance le serveur web sur le port 8080. Vous pouvez ensuite accéder à l'application en ouvrant http://localhost:8080 dans votre navigateur.
 
-## Comment démarrer le projet
 
-1. Clonez le repository :
-   ```bash
-   git clone https://github.com/yourusername/nasa-apis-project.git
