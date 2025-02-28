@@ -49,11 +49,8 @@ git remote add origin https://github.com/yourusername/nasa-apis-project.git
 git push -u origin main -cela envoie les fichiers locaux sur GitHub, sur la branche principale.
 
 ## Disponibilité sur Docker Hub
-Le conteneur Docker de ce projet est disponible sur Docker Hub. Pour le télécharger et l'exécuter, utilisez la commande suivante :
 
-docker run -d -p 8080:80 gabitovrv/nasa-test -cette commande télécharge l'image et lance le serveur web sur le port 8080. Vous pouvez ensuite accéder à l'application en ouvrant http://localhost:8080 dans votre navigateur.
-
-Créer et pousser l'image Docker
+**Créer et pousser l'image Docker**
 Pour créer et charger l'image Docker sur Docker Hub, procédez comme suit :
 
 **Créer un fichier Dockerfile à la racine du projet** :
@@ -64,7 +61,7 @@ Construire l'image Docker :
 
 docker build -t votre-username/nasa-test .
 
-**Se connecter à Docker Hub :
+**Se connecter à Docker Hub** :
 
 docker login
 
@@ -72,7 +69,7 @@ docker login
 
 docker push votre-username/nasa-test
 
-**Télécharger et exécuter l'image depuis Docker Hub : Comme mentionné plus tôt, vous pouvez utiliser la commande suivante pour exécuter l'image :
+**Télécharger et exécuter l'image depuis Docker Hub : Comme mentionné plus tôt, vous pouvez utiliser la commande suivante pour exécuter l'image** :
 
 docker run -d -p 8080:80 votre-username/nasa-test
 
