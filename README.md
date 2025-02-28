@@ -29,8 +29,7 @@ Le projet a été initialisé sur Git avec les commandes suivantes :
 
 **Initialisation du dépôt Git**:
 
-git init
-Cela crée un nouveau dépôt Git dans le répertoire local.
+git init -cela crée un nouveau dépôt Git dans le répertoire local.
 
 **Ajout des fichiers au suivi Git**:
 
