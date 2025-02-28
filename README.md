@@ -34,27 +34,25 @@ Cela crée un nouveau dépôt Git dans le répertoire local.
 
 - **Ajout des fichiers au suivi Git**:
 
-git add .
-Cette commande ajoute tous les fichiers du répertoire au suivi Git.
+git add . -cette commande ajoute tous les fichiers du répertoire au suivi Git.
 
 - **Commit des changements**:
 
-git commit -m "Initial commit - Adding project files"
-Cela enregistre les modifications avec un message décrivant ce qui a été ajouté ou modifié.
+git commit -m "Initial commit - Adding project files" -cela enregistre les modifications avec un message décrivant ce qui a été ajouté ou modifié.
 
-- **Création d'un dépôt distant sur GitHub**: Vous devez créer un dépôt sur GitHub, puis ajouter l'URL du dépôt distant avec la commande suivante :
+- **Création d'un dépôt distant sur GitHub**: 
+Vous devez créer un dépôt sur GitHub, puis ajouter l'URL du dépôt distant avec la commande suivante :
 
-git remote add origin https://github.com/yourusername/nasa-apis-project.git
-Push des modifications sur GitHub:
+git remote add origin https://github.com/yourusername/nasa-apis-project.git 
 
-git push -u origin main
-Cela envoie les fichiers locaux sur GitHub, sur la branche principale.
+- **Push des modifications sur GitHub**:
+
+git push -u origin main -cela envoie les fichiers locaux sur GitHub, sur la branche principale.
 
 ## Disponibilité sur Docker Hub
 Le conteneur Docker de ce projet est disponible sur Docker Hub. Pour le télécharger et l'exécuter, utilisez la commande suivante :
 
-docker run -d -p 8080:80 gabitovrv/nasa-test
-Cette commande télécharge l'image et lance le serveur web sur le port 8080. Vous pouvez ensuite accéder à l'application en ouvrant http://localhost:8080 dans votre navigateur.
+docker run -d -p 8080:80 gabitovrv/nasa-test -cette commande télécharge l'image et lance le serveur web sur le port 8080. Vous pouvez ensuite accéder à l'application en ouvrant http://localhost:8080 dans votre navigateur.
 
 Créer et pousser l'image Docker
 Pour créer et charger l'image Docker sur Docker Hub, procédez comme suit :
