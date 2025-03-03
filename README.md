@@ -24,7 +24,7 @@ Le projet comprend les pages suivantes :
 5. **Mars (mars.html)** — section avec des photos des rovers martiens.
 
 
-## Git Workflow
+## Git 
 Le projet a été initialisé sur Git avec les commandes suivantes :
 
 **Initialisation du dépôt Git**:
@@ -55,15 +55,18 @@ Pour créer et charger l'image Docker sur Docker Hub, procédez comme suit :
 
 **Créer un fichier Dockerfile à la racine du projet** :
 
-FROM nginx:alpine
+FROM nginx:latest
 COPY . /usr/share/nginx/html
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
+
 Construire l'image Docker :
 
 docker build -t votre-username/nasa-test .
 
 **Se connecter à Docker Hub** :
 
-docker login
+docker login / ou sur Docker Desktop
 
 **Pousser l'image vers Docker Hub** :
 
