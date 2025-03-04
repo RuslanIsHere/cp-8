@@ -42,7 +42,7 @@ git commit -m "Initial commit - Adding project files" -cela enregistre les modif
 **Création d'un dépôt distant sur GitHub**: 
 Vous devez créer un dépôt sur GitHub, puis ajouter l'URL du dépôt distant avec la commande suivante :
 
-git remote add origin https://github.com/yourusername/nasa-apis-project.git 
+git remote add origin https://github.com/RuslanIsHere/cp-8.git 
 
 **Push des modifications sur GitHub**:
 
